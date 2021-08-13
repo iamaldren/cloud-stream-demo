@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cloud-stream-demo
+  cloud:
+    stream:
+      function:
+        bindings:
+          log-in-0: input
+      bindings:
+        input:
+          destination: input_topic
